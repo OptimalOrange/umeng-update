@@ -67,10 +67,11 @@ task androidSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
-artifacts {
-    archives androidSourcesJar
-    archives androidJavadocsJar
-}
+// 目前本项目没有*.java源代码，androidSourcesJar、androidJavadocsJar生成的jar实际是空的，故暂时不发布它们。
+//artifacts {
+//    archives androidSourcesJar
+//    archives androidJavadocsJar
+//}
 
 /*uploadArchives {
     repositories.mavenDeployer {
