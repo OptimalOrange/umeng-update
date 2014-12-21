@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.umeng.example"
-    android:versionCode="1"
-    android:versionName="1.0" >
-
-    <uses-sdk android:minSdkVersion="8"
-        android:targetSdkVersion="18" />
+    package="com.umeng.example" >
     
     <application
         android:debuggable="true"
@@ -32,15 +27,6 @@
         <activity android:name="com.umeng.fb.ContactActivity" />
         
         <!-- Fb Activitys End -->
-        
-        
-        <!-- Update Activitys Start -->
-        <activity 
-            android:name="com.umeng.update.UpdateDialogActivity"
-		  	android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
-
-        <!-- Update Activitys End -->
 
 
         <!-- Analytics start -->
@@ -78,10 +64,6 @@
             android:value="Umeng" >
         </meta-data>
 
-        <service
-            android:name="com.umeng.update.net.DownloadingService"
-            android:process=":DownloadingService" >
-        </service>
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
