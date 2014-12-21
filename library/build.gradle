@@ -15,12 +15,12 @@ apply plugin: 'com.android.library'
 group = 'com.umeng.update'
 
 android {
-    compileSdkVersion 18
-    buildToolsVersion "20.0.0"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 18
+        targetSdkVersion 21
         versionCode VERSION_CODE.toInteger()
         versionName VERSION_NAME
     }
