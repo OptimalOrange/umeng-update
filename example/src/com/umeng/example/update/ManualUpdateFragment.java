@@ -24,6 +24,8 @@ public class ManualUpdateFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				UmengUpdateAgent.setDefault();
+                //请在调用update,forceUpdate,silentUpdate函数之前设置推广id
+                UmengUpdateAgent.setSlotId("54357");
 				UmengUpdateAgent.forceUpdate(getActivity());
 			}
 		});
