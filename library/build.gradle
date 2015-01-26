@@ -99,11 +99,11 @@ bintray {
             userOrg = BINTRAY_USER_ORGANIZATION
         }
         name = "${project.group}:${project.name}"
-        websiteUrl = 'http://dev.umeng.com/auto-update/android/introduction'
+        websiteUrl = 'http://dev.umeng.com/auto-update/android-doc/introduction'
         issueTrackerUrl = 'https://github.com/OptimalOrange/umeng-update/issues'
         vcsUrl = 'https://github.com/OptimalOrange/umeng-update.git'
-        licenses = ['Public Domain']
-        labels = ['update', 'UpdateChecker', 'auto update', 'automatic update', 'apk', 'Android']
+        licenses = ['Apache-2.0']
+        labels = ['update', 'UpdateChecker', 'auto update', 'automatic update', 'Android']
         attributes = ['plat': ['Android']]
         publicDownloadNumbers = true
         /*version {
